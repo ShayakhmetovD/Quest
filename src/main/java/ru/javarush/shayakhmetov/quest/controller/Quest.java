@@ -20,7 +20,6 @@ public class Quest extends HttpServlet {
     public static int count;
 
 
-
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
 
@@ -38,32 +37,34 @@ public class Quest extends HttpServlet {
         String textAnswer2 = listAnswersFromSession.get(1).getText();
         boolean isCorrectAnswer2 = listAnswersFromSession.get(1).isCorrect();
 
-        if(answerFromJsp.equals(textAnswer1) && isCorrectAnswer1){
+        if (answerFromJsp.equals(textAnswer1) && isCorrectAnswer1) {
             count++;
-            finish();
-            if (count < 3){
+            if (count < 3) {
                 nextQuestion();
+                getServletContext().getRequestDispatcher("/quest.jsp").forward(req, resp);
+            }else {
+                getServletContext().getRequestDispatcher("/finished.jsp").forward(req, resp);
             }
 
-            getServletContext().getRequestDispatcher("/quest.jsp").forward(req, resp);
-        } else if (answerFromJsp.equals(textAnswer2) && isCorrectAnswer2){
+        } else if (answerFromJsp.equals(textAnswer2) && isCorrectAnswer2) {
             count++;
-            finish();
-            if (count < 3){
+            if (count < 3) {
                 nextQuestion();
+                getServletContext().getRequestDispatcher("/quest.jsp").forward(req, resp);
+            }else {
+                getServletContext().getRequestDispatcher("/finished.jsp").forward(req, resp);
             }
-            getServletContext().getRequestDispatcher("/quest.jsp").forward(req, resp);
-        }else {
+        } else {
             RequestDispatcher requestDispatcher = req.getRequestDispatcher("/restart");
             requestDispatcher.forward(req, resp);
         }
     }
 
-    private Question questionFromService(){
+    private Question questionFromService() {
         return gameService.getQuestionFromRepository();
     }
 
-    private void nextQuestion(){
+    private void nextQuestion() {
         question = questionFromService();
 
         String text = question.getText();
@@ -73,11 +74,5 @@ public class Quest extends HttpServlet {
         currentSession.setAttribute("text", text);
         currentSession.setAttribute("id", id);
         currentSession.setAttribute("answers", answers);
-    }
-
-    private void finish(){
-        if (count == 3){
-            System.out.println("win");
-        }
     }
 }

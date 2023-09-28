@@ -13,14 +13,8 @@ import java.io.PrintWriter;
 public class Restart extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        resp.setContentType("text/html");
-
-        PrintWriter out = resp.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + "Ты проиграл, попробуй в другой раз!" + "</h1>");
-        out.println("</body></html>");
 
         req.getSession().invalidate();
-        resp.sendRedirect("/quest.jsp");
+        resp.sendRedirect("/start");
     }
 }

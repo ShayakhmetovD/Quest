@@ -18,7 +18,7 @@
 
 <div class="d-grid gap-2 col-4 mx-auto">
     <button class="btn btn-outline-success" onclick="location.href='/quest.jsp'">Да</button>
-    <button class="btn btn-outline-danger" onclick="location.href='/exit'">Нет</button>
+    <button class="btn btn-outline-danger" onclick="location.href='/exit.jsp'">Нет</button>
 </div>
 
 

@@ -9,32 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5d607a3-a61a-40af-8b85-368bd63a7ece" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Exit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/InitServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Quest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Restart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/entity/Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/entity/Quest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/entity/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/repository/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/repository/RepositoryTransfer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/service/GameService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/quest.jsp" afterDir="false" />
+    <list default="true" id="d5d607a3-a61a-40af-8b85-368bd63a7ece" name="Changes" comment="Добавлена функциональная часть проекта&#10;Добавлена визуальная часть">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/exit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/finished.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Exit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Quest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Quest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Restart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Restart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/6.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/6.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +30,7 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="package.json" />
+        <option value="HTML File" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -79,6 +63,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -94,6 +79,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
@@ -196,8 +182,17 @@
       <updated>1695564157779</updated>
       <workItem from="1695564158770" duration="897000" />
       <workItem from="1695830504258" duration="9740000" />
-      <workItem from="1695892136227" duration="20663000" />
+      <workItem from="1695892136227" duration="23473000" />
     </task>
+    <task id="LOCAL-00001" summary="Добавлена функциональная часть проекта&#10;Добавлена визуальная часть">
+      <option name="closed" value="true" />
+      <created>1695915904298</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695915904298</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,5 +208,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Добавлена функциональная часть проекта&#10;Добавлена визуальная часть" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена функциональная часть проекта&#10;Добавлена визуальная часть" />
   </component>
 </project>
