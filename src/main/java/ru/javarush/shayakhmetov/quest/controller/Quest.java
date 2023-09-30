@@ -39,19 +39,21 @@ public class Quest extends HttpServlet {
 
         if (answerFromJsp.equals(textAnswer1) && isCorrectAnswer1) {
             count++;
-            if (count < 3) {
-                nextQuestion();
+            if (count < gameService.getSizeByListQuestions()) {
+                nextQuestion(count);
                 getServletContext().getRequestDispatcher("/quest.jsp").forward(req, resp);
             }else {
+                count = 0;
                 getServletContext().getRequestDispatcher("/finished.jsp").forward(req, resp);
             }
 
         } else if (answerFromJsp.equals(textAnswer2) && isCorrectAnswer2) {
             count++;
-            if (count < 3) {
-                nextQuestion();
+            if (count < gameService.getSizeByListQuestions()) {
+                nextQuestion(count);
                 getServletContext().getRequestDispatcher("/quest.jsp").forward(req, resp);
             }else {
+                count = 0;
                 getServletContext().getRequestDispatcher("/finished.jsp").forward(req, resp);
             }
         } else {
@@ -59,12 +61,12 @@ public class Quest extends HttpServlet {
         }
     }
 
-    private Question questionFromService() {
-        return gameService.getQuestionFromRepository();
+    private Question questionFromService(int idQuestion) {
+        return gameService.getQuestionFromRepository(idQuestion);
     }
 
-    private void nextQuestion() {
-        question = questionFromService();
+    private void nextQuestion(int idQuestion) {
+        question = questionFromService(idQuestion);
 
         String text = question.getText();
         Integer id = question.getId();

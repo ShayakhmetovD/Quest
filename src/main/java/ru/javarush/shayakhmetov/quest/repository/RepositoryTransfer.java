@@ -9,7 +9,7 @@ import java.util.List;
 
 public class RepositoryTransfer implements Repository{
     private static RepositoryTransfer repositoryTransfer;
-    private static int count = 0;
+    public List<Question> questions;
 
     private static final String filePath = "/Users/danil/Desktop/Проекты по лекциям/МОИ ПРОЕКТЫ ПО КУРСУ/3 модуль" +
             "/ru.javarush.shayakhmetov.quest/src/main/java/ru/javarush/shayakhmetov/quest/data.json";
@@ -26,25 +26,22 @@ public class RepositoryTransfer implements Repository{
 
 
     @Override
-    public Question transfer() {
+    public Question transfer(int idQuestion) {
         File file = new File(filePath);
         ObjectMapper objectMapper = new ObjectMapper();
-        List<Question> questions;
         Question question;
         try {
             questions = objectMapper.readValue(file, new TypeReference<>() {
             });
 
-            if (count == 4) {
-                return null;
-            }else {
-                question = questions.get(count);
-                count++;
-                return question;
-            }
+            return questions.get(idQuestion);
 
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public int sizeByListQuestions(){
+        return questions.size();
     }
 }

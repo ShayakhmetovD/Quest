@@ -11,9 +11,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d5d607a3-a61a-40af-8b85-368bd63a7ece" name="Changes" comment="Внесены изменения">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/InitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/InitServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Quest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Quest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/entity/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/entity/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/quest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/quest.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/repository/RepositoryTransfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/repository/RepositoryTransfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/service/GameService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,10 +26,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="package.json" />
         <option value="HTML File" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -184,7 +186,7 @@
       <workItem from="1695892136227" duration="23827000" />
       <workItem from="1696087180443" duration="120000" />
       <workItem from="1696087303705" duration="45000" />
-      <workItem from="1696087361103" duration="3459000" />
+      <workItem from="1696087361103" duration="8785000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена функциональная часть проекта&#10;Добавлена визуальная часть">
       <option name="closed" value="true" />
@@ -210,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696090249729</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Внесены изменения">
+      <option name="closed" value="true" />
+      <created>1696091018175</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696091018175</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

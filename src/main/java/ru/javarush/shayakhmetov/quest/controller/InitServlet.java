@@ -22,7 +22,7 @@ public class InitServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession currentSession = req.getSession(true);
         GameService service = GameService.newInstance();
-        Question question = service.getQuestionFromRepository();
+        Question question = service.getQuestionFromRepository(0);
 
         String text = question.getText();
         Integer id = question.getId();
