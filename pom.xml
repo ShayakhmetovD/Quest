@@ -7,7 +7,7 @@
   <groupId>ru.javarush.shayakhmetov</groupId>
   <artifactId>quest</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>ru.javarush.shayakhmetov.quest</name>
+  <name>Quest</name>
   <packaging>war</packaging>
 
   <properties>

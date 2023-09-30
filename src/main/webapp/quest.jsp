@@ -19,10 +19,10 @@
 </form>
 
 
-<div class="accordion accordion-flush" id="accordionFlushExample">
+<div class="accordion accordion-flush position-absolute bottom-0 start-0" id="accordionFlushExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+      <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
         IP-address:
       </button>
     </h2>

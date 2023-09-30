@@ -55,8 +55,7 @@ public class Quest extends HttpServlet {
                 getServletContext().getRequestDispatcher("/finished.jsp").forward(req, resp);
             }
         } else {
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/restart");
-            requestDispatcher.forward(req, resp);
+            getServletContext().getRequestDispatcher("/fail.jsp").forward(req, resp);
         }
     }
 

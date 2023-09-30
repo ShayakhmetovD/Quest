@@ -8,7 +8,7 @@
 
 <h3 class="text-center"><%= "Ты победил, поздравляю!!!" %>
 
-<form action="restart" method="post">
+<form action="restart" method="get">
   <div class="d-grid gap-2 col-6 mx-auto">
     <input class="btn btn-outline-primary" type="submit" value="Начать новую игру">
   </div>

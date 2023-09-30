@@ -9,15 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5d607a3-a61a-40af-8b85-368bd63a7ece" name="Changes" comment="Добавлена функциональная часть проекта&#10;Добавлена визуальная часть">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/exit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/finished.html" afterDir="false" />
+    <list default="true" id="d5d607a3-a61a-40af-8b85-368bd63a7ece" name="Changes" comment="Внесены изменения">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Exit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Quest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Quest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Restart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Restart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/6.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/6.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/6.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/6.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/quest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/quest.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,26 +60,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/danil/Desktop/Проекты по лекциям/МОИ ПРОЕКТЫ ПО КУРСУ/3 модуль/ru.javarush.shayakhmetov.quest",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/danil/Desktop/Проекты по лекциям/МОИ ПРОЕКТЫ ПО КУРСУ/3 модуль/ru.javarush.shayakhmetov.quest&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
   <component name="RunManager">
@@ -182,7 +184,10 @@
       <updated>1695564157779</updated>
       <workItem from="1695564158770" duration="897000" />
       <workItem from="1695830504258" duration="9740000" />
-      <workItem from="1695892136227" duration="23473000" />
+      <workItem from="1695892136227" duration="23827000" />
+      <workItem from="1696087180443" duration="120000" />
+      <workItem from="1696087303705" duration="45000" />
+      <workItem from="1696087361103" duration="2605000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена функциональная часть проекта&#10;Добавлена визуальная часть">
       <option name="closed" value="true" />
@@ -192,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695915904298</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Внесены изменения">
+      <option name="closed" value="true" />
+      <created>1695920359227</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695920359227</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +224,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавлена функциональная часть проекта&#10;Добавлена визуальная часть" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена функциональная часть проекта&#10;Добавлена визуальная часть" />
+    <MESSAGE value="Внесены изменения" />
+    <option name="LAST_COMMIT_MESSAGE" value="Внесены изменения" />
   </component>
 </project>

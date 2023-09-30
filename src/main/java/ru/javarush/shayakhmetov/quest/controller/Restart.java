@@ -1,5 +1,6 @@
 package ru.javarush.shayakhmetov.quest.controller;
 
+import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -12,9 +13,9 @@ import java.io.PrintWriter;
 @WebServlet(name = "restartServlet", value = "/restart")
 public class Restart extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 
         req.getSession().invalidate();
-        resp.sendRedirect("/start");
+        getServletContext().getRequestDispatcher("/start").forward(req, resp);
     }
 }
