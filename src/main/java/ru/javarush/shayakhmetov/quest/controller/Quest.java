@@ -30,7 +30,7 @@ public class Quest extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         currentSession = req.getSession();
-        answerFromJsp = req.getParameter("question");
+        answerFromJsp = req.getParameter("answer");
         List<Answer> listAnswersFromSession = (List<Answer>) currentSession.getAttribute("answers");
         String textAnswer1 = listAnswersFromSession.get(0).getText();
         boolean isCorrectAnswer1 = listAnswersFromSession.get(0).isCorrect();

@@ -13,8 +13,8 @@
     <h2><strong>Вопрос № ${id} ${text}</strong></h2>
   </div>
   <div class="d-grid gap-2 col-6 mx-auto">
-    <input class="btn btn-outline-primary" type="submit" name="question" value=${answers.get(0).getText()}>
-    <input class="btn btn-outline-primary" type="submit" name="question" value=${answers.get(1).getText()}><br/>
+    <input class="btn btn-outline-primary" type="submit" name="answer" value=${answers.get(0).getText()}>
+    <input class="btn btn-outline-primary" type="submit" name="answer" value=${answers.get(1).getText()}><br/>
   </div>
 </form>
 
