@@ -11,11 +11,15 @@
   <component name="ChangeListManager">
     <list default="true" id="d5d607a3-a61a-40af-8b85-368bd63a7ece" name="Changes" comment="Внесены изменения">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/InitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/InitServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Quest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/controller/Quest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/db/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/entity/Quest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/repository/RepositoryTransfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/repository/RepositoryTransfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/service/GameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/6.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/background.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/exit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/exit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/fail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/finished.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/finished.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/quest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/quest.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,29 +63,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/danil/Desktop/Проекты по лекциям/МОИ ПРОЕКТЫ ПО КУРСУ/3 модуль/ru.javarush.shayakhmetov.quest&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/danil/Desktop/Проекты по лекциям/МОИ ПРОЕКТЫ ПО КУРСУ/3 модуль/Quest",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/jsp/image" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/image" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/jsp" />
+      <recent name="$PROJECT_DIR$/src/main/java/ru/javarush/shayakhmetov/quest/db" />
     </key>
   </component>
   <component name="RunManager">
@@ -186,7 +193,8 @@
       <workItem from="1695892136227" duration="23827000" />
       <workItem from="1696087180443" duration="120000" />
       <workItem from="1696087303705" duration="45000" />
-      <workItem from="1696087361103" duration="8785000" />
+      <workItem from="1696087361103" duration="10345000" />
+      <workItem from="1696159681219" duration="8037000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена функциональная часть проекта&#10;Добавлена визуальная часть">
       <option name="closed" value="true" />
@@ -220,7 +228,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696091018175</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Внесены изменения">
+      <option name="closed" value="true" />
+      <created>1696097901189</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696097901189</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Внесены изменения">
+      <option name="closed" value="true" />
+      <created>1696098105223</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696098105223</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

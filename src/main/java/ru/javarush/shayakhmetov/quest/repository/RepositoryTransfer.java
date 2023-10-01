@@ -11,8 +11,8 @@ public class RepositoryTransfer implements Repository{
     private static RepositoryTransfer repositoryTransfer;
     public List<Question> questions;
 
-    private static final String filePath = "/Users/danil/Desktop/Проекты по лекциям/МОИ ПРОЕКТЫ ПО КУРСУ/3 модуль" +
-            "/ru.javarush.shayakhmetov.quest/src/main/java/ru/javarush/shayakhmetov/quest/data.json";
+    private static final String filePath = "/Users/danil/Desktop/Проекты по лекциям/МОИ ПРОЕКТЫ ПО КУРСУ/" +
+            "3 модуль/Quest/src/main/java/ru/javarush/shayakhmetov/quest/db/data.json";
 
     private RepositoryTransfer() {
     }
@@ -29,7 +29,6 @@ public class RepositoryTransfer implements Repository{
     public Question transfer(int idQuestion) {
         File file = new File(filePath);
         ObjectMapper objectMapper = new ObjectMapper();
-        Question question;
         try {
             questions = objectMapper.readValue(file, new TypeReference<>() {
             });

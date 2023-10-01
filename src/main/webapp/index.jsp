@@ -5,15 +5,17 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Quest</title>
 </head>
-<body style="background-image:url('6.jpeg')">
-<h1 class="text-center"><%= "Привет, дорогой друг!" %>
+<body style="background-image:url('background.jpeg')">
+<h1 class="text-center"><%= "Привет, дорогой друг! Сегодня у нас с тобой будет викторина на футбольную тематику." %>
 </h1>
 <br/>
-<h3 class="text-center"><%= "Начнем игру?" %>
+<h3 class="text-center"><%= "Ты готов начать игру?" %>
 </h3>
 <br/>
 
-
+<video class="position-absolute top-50 start-50 translate-middle-x" width="700" height="800" controls="controls">
+    <source src="video.mp4" type="audio/mp4">
+</video>
 
 
 <div class="d-grid gap-2 col-4 mx-auto">
